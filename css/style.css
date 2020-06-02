@@ -1,0 +1,17 @@
+body {
+  font-family: Helvetica;
+  background-color: lavenderblush;
+  color: rgb(11, 11, 11);
+}
+
+h1 {
+  font-size: 48;
+}
+
+h3 {
+  font-size: 24;
+}
+
+p {
+  font-size: 16;
+}
