@@ -74,50 +74,50 @@ console.log('running');
 // correct1(answer1);
 // ==================================================================================
 
-// var author = 'Chandler';
-// var userName = prompt('What\'s your name?');
+var author = 'Chandler';
+var userName = prompt('What\'s your name?');
 
-// alert('Howdy ' + userName + '!' + ' Nice to meet you, I\'m ' + author + ', here\'s a little bit of info about me!');
+alert('Howdy ' + userName + '!' + ' Nice to meet you. I\'m ' + author + ', here\'s a little bit of info about me!');
 
-// var answer1 = prompt('Am I from South Carolina?') .toLowerCase() .replace('yes','y');
+var answer1 = prompt('Am I from South Carolina?') .toLowerCase() .replace('yes','y');
 // console.log(answer1);
-// if (answer1 === 'y') {
-//   alert('DING DING DING! great job! ' + userName + '! I\'m from Greenwood, South Carolina!');
-// } else {
-//   alert('Nope! I\'m originally from Greenwood, South Carolina!');
-// }
+if (answer1 === 'y') {
+  alert('DING DING DING! great job! ' + userName + '! I\'m from Greenwood, South Carolina!');
+} else {
+  alert('Nope! I\'m originally from Greenwood, South Carolina!');
+}
 
-// var answer2 = prompt('Am I 27 years old?') .toLowerCase() .replace('no','n');
+var answer2 = prompt('Am I 27 years old?') .toLowerCase() .replace('no','n');
 // console.log(answer2);
-// if (answer2 === 'n') {
-//   alert('DING DING DING! great job! I\'m 30 years old.');
-// } else {
-//   alert('nope! I\'m 30 years old.');
-// }
+if (answer2 === 'n') {
+  alert('DING DING DING! great job! I\'m 30 years old.');
+} else {
+  alert('nope! I\'m 30 years old.');
+}
 
-// var answer3 = prompt('Am I bilingual?') .toLowerCase() .replace('no','n');
+var answer3 = prompt('Am I bilingual?') .toLowerCase() .replace('no','n');
 // console.log(answer3);
-// if (answer3 === 'n'){
-//   alert('DING DING DING! Just english. I\'ve tried to teach myself French but never stuck with it long enough to learn.');
-// } else {
-//   alert('NOPE. Just english');
-// }
+if (answer3 === 'n'){
+  alert('DING DING DING! Just english. I\'ve tried to teach myself French but never stuck with it long enough to learn.');
+} else {
+  alert('NOPE. Just english');
+}
 
-// var answer4 = prompt('Am I a morning person?') .toLowerCase() .replace('no', 'n');
+var answer4 = prompt('Am I a morning person?') .toLowerCase() .replace('no', 'n');
 // console.log(answer4);
-// if (answer4 === 'n'){
-//   alert('DING DING DING! hell to the nah. I love to sleep');
-// } else {
-//   alert('hell to the nah. I love to sleep');
-// }
+if (answer4 === 'n'){
+  alert('DING DING DING! hell to the nah. I love to sleep');
+} else {
+  alert('hell to the nah. I love to sleep');
+}
 
-// var answer5 = prompt('Do aliens exist?') .toLowerCase() .replace('yes', 'y');
+var answer5 = prompt('Do aliens exist?') .toLowerCase() .replace('yes', 'y');
 // console.log(answer5);
-// if (answer5 === 'y'){
-//   alert(' 👽 ' + 'I WANT TO BELIEVE ' + ' 👽' );
-// } else {
-//   alert(' 👽👽👽👽👽👽👽👽👽👽👽 ');
-// }
+if (answer5 === 'y'){
+  alert(' 👽 ' + 'I WANT TO BELIEVE ' + ' 👽' );
+} else {
+  alert(' 👽👽👽👽👽👽👽👽👽👽👽 ');
+}
 
 
 

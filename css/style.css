@@ -16,43 +16,100 @@ img {
   height: 850px;
   padding: 25px;
   position: relative;
-  margin-left: 5px;
+  margin-left: 1px;
 }
 
 h1 {
   font-size: 90px;
-  font-family: Helvetica;
-  font-weight: lighter;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
   margin: 0px;
   padding-inline-start: 10px;
   padding-block-start: 0px;
 }
 
 h2 {
-  font-size: 70px;
-  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 80px;
   text-orientation: upright;
-  letter-spacing: -20px;
-  margin: 0px;
+  letter-spacing: -30px;
+  margin-left: -50px;
+  margin-right: -20px;
   padding-inline-start: 275px;
+  padding-right: 10px;
+
 }
 
 h3 {
+  font-family: 'Open Sans', sans-serif;
   background-color: #FBFBFB;
   font-size: 24;
   display: inline-flex;
-  padding-right: 75px;
+  padding-right: 65px;
+  padding-left: 10px;
   
 }
 
 p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   background-color: rgb(240, 240, 240);
   font-size: 16;
+  padding: 10px;
   padding-top: 150px;
   padding-right: 10px;
   text-align: right;
 }
 
 ul {
-  background-color: rgb(243, 240, 240);
+  list-style: none;
+}
+
+p ~ ul {
+  font-weight: 800;
+  letter-spacing: 0px;
+  margin-left: 65px;
+  padding-right: 10px;
+}
+
+footer ul {
+  display: flex;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  margin-left: -15px;
+}
+
+.button {
+  width: 25px;
+  height: 50px;
+  text-align: inherit;
+}
+
+.section4 {
+  margin-right: -10px;
+}
+
+
+#bio {
+  padding: 35px;
+  margin: 10px;
+  margin-top: 30px;
+}
+
+#education {
+  padding: 35px;
+  margin: 10px;
+  margin-top: 75px;
+}
+
+#experience {
+  padding: 35px;
+  margin: 10px;
+  margin-top: 150px;
+}
+
+#future {
+  padding: 35px;
+  margin: 10px;
 }
