@@ -14,9 +14,9 @@ img {
   image-rendering: crisp-edges;
   width: 850px;
   height: 850px;
-  padding: 50px;
-  position: fixed;
-  margin-left: 750px;
+  padding: 25px;
+  position: relative;
+  margin-left: 5px;
 }
 
 h1 {
@@ -40,15 +40,19 @@ h2 {
 h3 {
   background-color: #FBFBFB;
   font-size: 24;
+  display: inline-flex;
+  padding-right: 75px;
+  
 }
 
 p {
-  background-color: rgb(233, 232, 232);
+  background-color: rgb(240, 240, 240);
   font-size: 16;
-  padding-block-start: 1000px;
-  margin-right: 0px;
+  padding-top: 150px;
+  padding-right: 10px;
+  text-align: right;
 }
 
 ul {
-  background-color: #E4E4E4;
+  background-color: rgb(243, 240, 240);
 }
