@@ -48,34 +48,11 @@
 
 console.log('running');
 
-// ========== Question 1 ========== // working code, try to simplify during Loop Lab
-
-// function askName(){
-//   var userName = prompt('Howdy! Whats your name?');
-//   return userName;
-// }
-
-// function question1(userName){
-//   var answer1 = prompt(userName + ', Where am I from? South Carolina, or Tennessee?') .toLowerCase();
-//   while((answer1 !== 'south carolina') || (answer1 === 'tennessee')){
-//     answer1 = prompt('nope! try again ' + userName + '. South Carolina, or Tennessee?');
-//   }
-//   return answer1;
-// }
-
-// function correct1(answer1){
-//   if (answer1 === 'south carolina'){
-//     alert ('DING DING DING! Great Job ' + userName + '!');
-//   }
-// }
-
-// var userName = askName();
-// var answer1 = question1(userName);
-// correct1(answer1);
-// ==================================================================================
+// ========== QUESTION PROMPTS ========== //
 
 var author = 'Chandler';
 var userName = prompt('What\'s your name?');
+var arrayTally = [];
 
 alert('Howdy ' + userName + '!' + ' Nice to meet you. I\'m ' + author + ', here\'s a little bit of info about me!');
 
@@ -83,40 +60,50 @@ var answer1 = prompt('Am I from South Carolina?') .toLowerCase() .replace('yes',
 // console.log(answer1);
 if (answer1 === 'y') {
   alert('DING DING DING! great job! ' + userName + '! I\'m from Greenwood, South Carolina!');
+  arrayTally.push(1);
 } else {
   alert('Nope! I\'m originally from Greenwood, South Carolina!');
+  arrayTally.push(0);
 }
 
 var answer2 = prompt('Have I ever spent more than one month in the woods?') .toLowerCase() .replace('yes','y');
 // console.log(answer2);
 if (answer2 === 'y') {
   alert('DING DING DING! I spent two months in the woods of north georgia taking part in a wilderness program');
+  arrayTally.push(1);
 } else {
   alert('NOPE! I spent two months in the woods of north georgia taking part in a wilderness program');
+  arrayTally.push(0);
 }
 
 var answer3 = prompt('Am I bilingual?') .toLowerCase() .replace('no','n');
 // console.log(answer3);
 if (answer3 === 'n'){
   alert('DING DING DING! Just english. I\'ve tried to teach myself French but never stuck with it long enough to learn.');
+  arrayTally.push(1);
 } else {
   alert('NOPE. Just english');
+  arrayTally.push(0);
 }
 
 var answer4 = prompt('Am I a morning person?') .toLowerCase() .replace('no', 'n');
 // console.log(answer4);
 if (answer4 === 'n'){
   alert('DING DING DING! hell to the nah. I love to sleep');
+  arrayTally.push(1);
 } else {
   alert('hell to the nah. I love to sleep');
+  arrayTally.push(0);
 }
 
 var answer5 = prompt('Do aliens exist?') .toLowerCase() .replace('yes', 'y');
 // console.log(answer5);
 if (answer5 === 'y'){
   alert(' 👽 ' + 'I WANT TO BELIEVE ' + ' 👽' );
+  arrayTally.push(1);
 } else {
   alert(' 👽👽👽👽👽👽👽👽👽👽👽 ');
+  arrayTally.push(0);
 }
 
 var tries = 4;
@@ -128,18 +115,21 @@ do {
   tries--;
 
   if (userGuess >= 31) {
-    alert('nope, lower. ' + tries + ' tries left.');
+    alert('NOPE, lower. ' + tries + ' tries left.');
   } else if (userGuess <= 29) {
-    alert('nope, higher. ' + tries + ' tries left.');
+    alert('NOPE, higher. ' + tries + ' tries left.');
   } else if (userGuess === 30) {
-    alert('great job ' + userName + '!');
+    arrayTally.push(1);
+    alert('Great job ' + userName + '!');
     break;
   }
 
 } while (tries > 0);
 
-if (tries === 0){
-  alert('No more tries. i\'m 30');
+if (tries === -1){
+  arrayTally.push(0);
+  alert('No more tries. I\'m 30');
+
 }
 
 // ========== Question 7 ========== //
@@ -159,7 +149,9 @@ do {
 
   if (cityGuess === cityArray[6]){
     alert('Great job! I love Montreal!');
+    arrayTally.push(1);
     break;
+
   } else {
     alert('NOPE! ' + tries2 + ' Tries left. Hint: ' + cityAnswers);
   }
@@ -170,11 +162,18 @@ do {
 
 if (tries2 === 0){
   alert('No more tries. My favorite city to visit is Montreal!');
+  arrayTally.push(0);
 }
 
+// ========== FINAL SCORE ========== //
 
+var sum = 0;
 
+for (var i = 0; i < arrayTally.length; i++){
+  var tally = sum += arrayTally[i];
+}
 
+alert('Congrats ' + userName + ' you got ' + tally + ' out of 7 questions correct');
 
 
 
