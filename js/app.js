@@ -74,50 +74,73 @@ console.log('running');
 // correct1(answer1);
 // ==================================================================================
 
-// var author = 'Chandler';
-// var userName = prompt('What\'s your name?');
+var author = 'Chandler';
+var userName = prompt('What\'s your name?');
 
-// alert('Howdy ' + userName + '!' + ' Nice to meet you. I\'m ' + author + ', here\'s a little bit of info about me!');
+alert('Howdy ' + userName + '!' + ' Nice to meet you. I\'m ' + author + ', here\'s a little bit of info about me!');
 
-// var answer1 = prompt('Am I from South Carolina?') .toLowerCase() .replace('yes','y');
-// // console.log(answer1);
-// if (answer1 === 'y') {
-//   alert('DING DING DING! great job! ' + userName + '! I\'m from Greenwood, South Carolina!');
-// } else {
-//   alert('Nope! I\'m originally from Greenwood, South Carolina!');
-// }
+var answer1 = prompt('Am I from South Carolina?') .toLowerCase() .replace('yes','y');
+// console.log(answer1);
+if (answer1 === 'y') {
+  alert('DING DING DING! great job! ' + userName + '! I\'m from Greenwood, South Carolina!');
+} else {
+  alert('Nope! I\'m originally from Greenwood, South Carolina!');
+}
 
-// var answer2 = prompt('Am I 27 years old?') .toLowerCase() .replace('no','n');
-// // console.log(answer2);
-// if (answer2 === 'n') {
-//   alert('DING DING DING! great job! I\'m 30 years old.');
-// } else {
-//   alert('nope! I\'m 30 years old.');
-// }
+var answer2 = prompt('Have I ever spent more than one month in the woods?') .toLowerCase() .replace('yes','y');
+// console.log(answer2);
+if (answer2 === 'y') {
+  alert('DING DING DING! I spent two months in the woods of north georgia taking part in a wilderness program');
+} else {
+  alert('NOPE! I spent two months in the woods of north georgia taking part in a wilderness program');
+}
 
-// var answer3 = prompt('Am I bilingual?') .toLowerCase() .replace('no','n');
-// // console.log(answer3);
-// if (answer3 === 'n'){
-//   alert('DING DING DING! Just english. I\'ve tried to teach myself French but never stuck with it long enough to learn.');
-// } else {
-//   alert('NOPE. Just english');
-// }
+var answer3 = prompt('Am I bilingual?') .toLowerCase() .replace('no','n');
+// console.log(answer3);
+if (answer3 === 'n'){
+  alert('DING DING DING! Just english. I\'ve tried to teach myself French but never stuck with it long enough to learn.');
+} else {
+  alert('NOPE. Just english');
+}
 
-// var answer4 = prompt('Am I a morning person?') .toLowerCase() .replace('no', 'n');
-// // console.log(answer4);
-// if (answer4 === 'n'){
-//   alert('DING DING DING! hell to the nah. I love to sleep');
-// } else {
-//   alert('hell to the nah. I love to sleep');
-// }
+var answer4 = prompt('Am I a morning person?') .toLowerCase() .replace('no', 'n');
+// console.log(answer4);
+if (answer4 === 'n'){
+  alert('DING DING DING! hell to the nah. I love to sleep');
+} else {
+  alert('hell to the nah. I love to sleep');
+}
 
-// var answer5 = prompt('Do aliens exist?') .toLowerCase() .replace('yes', 'y');
-// // console.log(answer5);
-// if (answer5 === 'y'){
-//   alert(' 👽 ' + 'I WANT TO BELIEVE ' + ' 👽' );
-// } else {
-//   alert(' 👽👽👽👽👽👽👽👽👽👽👽 ');
-// }
+var answer5 = prompt('Do aliens exist?') .toLowerCase() .replace('yes', 'y');
+// console.log(answer5);
+if (answer5 === 'y'){
+  alert(' 👽 ' + 'I WANT TO BELIEVE ' + ' 👽' );
+} else {
+  alert(' 👽👽👽👽👽👽👽👽👽👽👽 ');
+}
+
+var tries = 4;
+
+do {
+  var guess = prompt('How old am I? Hint: guess a number between 25 and 35');
+  var userGuess = parseInt(guess);
+
+  tries--;
+
+  if (userGuess >= 31) {
+    alert('nope, lower. ' + tries + ' tries left.');
+  } else if (userGuess <= 29) {
+    alert('nope, higher. ' + tries + ' tries left.');
+  } else if (userGuess === 30) {
+    alert('great job ' + userName + '!');
+    break;
+  }
+
+} while (tries > 0);
+
+if (tries === 0){
+  alert('No more tries. i\'m 30');
+}
 
 
 
