@@ -45,10 +45,12 @@
     --- alert() correct answer + blurb w/extra info
 */
 
+
+
 // ========== GLOBAL VAR + GREETING ========== //
 
-var userName = prompt('What\'s your name?');
 var arrayTally = [];
+var userName = prompt('What\'s your name?');
 
 alert('Howdy ' + userName + '!' + ' Nice to meet you. I\'m Chandler. here\'s a little bit of info about me!');
 
@@ -64,7 +66,9 @@ if (answer1 === 'y') {
   arrayTally.push(0);
 }
 
+
 // ========== Question 2 ========== //
+
 
 var answer2 = prompt('Have I ever spent more than one month in the woods?') .toLowerCase() .replace('yes','y');
 if (answer2 === 'y') {
@@ -75,7 +79,9 @@ if (answer2 === 'y') {
   arrayTally.push(0);
 }
 
+
 // ========== Question 3 ========== //
+
 
 var answer3 = prompt('Am I bilingual?') .toLowerCase() .replace('no','n');
 if (answer3 === 'n'){
@@ -86,7 +92,9 @@ if (answer3 === 'n'){
   arrayTally.push(0);
 }
 
+
 // ========== Question 4 ========== //
+
 
 var answer4 = prompt('Am I a morning person?') .toLowerCase() .replace('no', 'n');
 if (answer4 === 'n'){
@@ -97,7 +105,9 @@ if (answer4 === 'n'){
   arrayTally.push(0);
 }
 
+
 // ========== Question 5 ========== //
+
 
 var answer5 = prompt('Do aliens exist?') .toLowerCase() .replace('yes', 'y');
 if (answer5 === 'y'){
@@ -107,6 +117,7 @@ if (answer5 === 'y'){
   alert(' 👽👽👽👽👽👽👽👽👽👽👽 ');
   arrayTally.push(0);
 }
+
 
 // ========== Question 6 ========== //
 
@@ -140,7 +151,7 @@ if (tries === -1){
 
 var tries2 = 6;
 var cityArray = ['london','daytona beach','berlin','vancouver','hay\'s kansas','orlando','montreal'];
-// var cityAnswers = cityArray.toString(); // quicker way, but format issues?
+var cityAnswers = cityArray.toString(); // quicker way, but format issues?
 
 console.log(cityGuess);
 
@@ -178,7 +189,6 @@ for (var i = 0; i < arrayTally.length; i++){
 }
 
 alert('Congrats ' + userName + ' you got ' + tally + ' out of 7 questions correct');
-
 
 
 
