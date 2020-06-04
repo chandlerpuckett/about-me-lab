@@ -43,21 +43,19 @@
     prompt() aliens?
     --- if else statement
     --- alert() correct answer + blurb w/extra info
-
 */
 
-console.log('running');
+// ========== GLOBAL VAR + GREETING ========== //
 
-// ========== QUESTION PROMPTS ========== //
-
-var author = 'Chandler';
 var userName = prompt('What\'s your name?');
 var arrayTally = [];
 
-alert('Howdy ' + userName + '!' + ' Nice to meet you. I\'m ' + author + ', here\'s a little bit of info about me!');
+alert('Howdy ' + userName + '!' + ' Nice to meet you. I\'m Chandler. here\'s a little bit of info about me!');
+
+// ========== Question 1 ========== //
+
 
 var answer1 = prompt('Am I from South Carolina?') .toLowerCase() .replace('yes','y');
-// console.log(answer1);
 if (answer1 === 'y') {
   alert('DING DING DING! great job! ' + userName + '! I\'m from Greenwood, South Carolina!');
   arrayTally.push(1);
@@ -66,8 +64,9 @@ if (answer1 === 'y') {
   arrayTally.push(0);
 }
 
+// ========== Question 2 ========== //
+
 var answer2 = prompt('Have I ever spent more than one month in the woods?') .toLowerCase() .replace('yes','y');
-// console.log(answer2);
 if (answer2 === 'y') {
   alert('DING DING DING! I spent two months in the woods of north georgia taking part in a wilderness program');
   arrayTally.push(1);
@@ -76,8 +75,9 @@ if (answer2 === 'y') {
   arrayTally.push(0);
 }
 
+// ========== Question 3 ========== //
+
 var answer3 = prompt('Am I bilingual?') .toLowerCase() .replace('no','n');
-// console.log(answer3);
 if (answer3 === 'n'){
   alert('DING DING DING! Just english. I\'ve tried to teach myself French but never stuck with it long enough to learn.');
   arrayTally.push(1);
@@ -86,8 +86,9 @@ if (answer3 === 'n'){
   arrayTally.push(0);
 }
 
+// ========== Question 4 ========== //
+
 var answer4 = prompt('Am I a morning person?') .toLowerCase() .replace('no', 'n');
-// console.log(answer4);
 if (answer4 === 'n'){
   alert('DING DING DING! hell to the nah. I love to sleep');
   arrayTally.push(1);
@@ -96,8 +97,9 @@ if (answer4 === 'n'){
   arrayTally.push(0);
 }
 
+// ========== Question 5 ========== //
+
 var answer5 = prompt('Do aliens exist?') .toLowerCase() .replace('yes', 'y');
-// console.log(answer5);
 if (answer5 === 'y'){
   alert(' 👽 ' + 'I WANT TO BELIEVE ' + ' 👽' );
   arrayTally.push(1);
@@ -105,6 +107,8 @@ if (answer5 === 'y'){
   alert(' 👽👽👽👽👽👽👽👽👽👽👽 ');
   arrayTally.push(0);
 }
+
+// ========== Question 6 ========== //
 
 var tries = 4;
 
@@ -136,7 +140,7 @@ if (tries === -1){
 
 var tries2 = 6;
 var cityArray = ['london','daytona beach','berlin','vancouver','hay\'s kansas','orlando','montreal'];
-var cityAnswers = cityArray.toString(); // quicker way, but format issues?
+// var cityAnswers = cityArray.toString(); // quicker way, but format issues?
 
 console.log(cityGuess);
 
