@@ -142,6 +142,38 @@ if (tries === 0){
   alert('No more tries. i\'m 30');
 }
 
+// ========== Question 7 ========== //
+
+var tries2 = 6;
+var cityArray = ['london','daytona beach','berlin','vancouver','hay\'s kansas','orlando','montreal'];
+var cityAnswers = cityArray.toString(); // quicker way, but format issues?
+
+console.log(cityGuess);
+
+do {
+  var cityGuess = prompt('What\'s my favorite city to visit? ' + cityArray[0] + ', ' + cityArray[1]+', '+cityArray[2]+', '+cityArray[3]+', '+cityArray[4]+', '+cityArray[5]+', or '+cityArray[6]+'?').toLowerCase();
+
+  console.log(cityGuess);
+
+  tries2--;
+
+  if (cityGuess === cityArray[6]){
+    alert('Great job! I love Montreal!');
+    break;
+  } else {
+    alert('NOPE! ' + tries2 + ' Tries left. Hint: ' + cityAnswers);
+  }
+
+  console.log(cityGuess);
+
+} while (tries2 > 0);
+
+if (tries2 === 0){
+  alert('No more tries. My favorite city to visit is Montreal!');
+}
+
+
+
 
 
 
