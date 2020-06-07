@@ -85,7 +85,6 @@ function woods(){
     alert('DING DING DING! I spent two months in the woods of north georgia taking part in a wilderness program');
   } else {
     alert('NOPE! I spent two months in the woods of north georgia taking part in a wilderness program');
-
   }
 }
 
@@ -98,7 +97,6 @@ function bilingual(){
     alert('DING DING DING! Just english. I\'ve tried to teach myself French but never stuck with it long enough to learn.');
   } else {
     alert('NOPE. Just english');
-
   }
 }
 
@@ -111,7 +109,6 @@ function morning(){
     alert('DING DING DING! hell to the nah. I love to sleep');
   } else {
     alert('hell to the nah. I love to sleep');
-
   }
 }
 
@@ -124,7 +121,6 @@ function aliens(){
     alert(' 👽 ' + 'I WANT TO BELIEVE ' + ' 👽' );
   } else {
     alert(' 👽👽👽👽👽👽👽👽👽👽👽 ');
-
   }
 }
 
@@ -151,9 +147,7 @@ function ageQuestion(){
   } while (tries > 0);
 
   if (tries === -1){
-
     alert('No more tries. I\'m 30');
-
   }
 }
 
@@ -182,7 +176,6 @@ function favoriteCity(){
 
   if (tries2 === 0){
     alert('No more tries. Montreal & Vancouver are two of my favorite cities 🇨🇦🇨🇦🇨🇦');
-
   }
 }
 
