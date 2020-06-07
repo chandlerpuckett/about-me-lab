@@ -48,10 +48,22 @@
 
 
 //========== GLOBAL VAR + GREETING ========== //
+
 var score = 0;
 var userName = prompt('What\'s your name?');
 
 alert('Howdy ' + userName + '!' + ' Nice to meet you. I\'m Chandler. here\'s a little bit of info about me!');
+
+// ========== FUNCTION INVOCATION ========== //
+
+homeTown();
+woods();
+bilingual();
+morning();
+aliens();
+ageQuestion();
+favoriteCity ();
+
 // ========== Question 1 ========== //
 
 function homeTown(){
@@ -63,8 +75,6 @@ function homeTown(){
     alert('Nope! I\'m originally from Greenwood, South Carolina!');
   }
 }
-
-homeTown();
 
 // ========== Question 2 ========== //
 
@@ -79,7 +89,6 @@ function woods(){
   }
 }
 
-woods();
 // ========== Question 3 ========== //
 
 function bilingual(){
@@ -92,7 +101,7 @@ function bilingual(){
 
   }
 }
-bilingual();
+
 //========== Question 4 ========== //
 
 function morning(){
@@ -105,7 +114,7 @@ function morning(){
 
   }
 }
-morning();
+
 // ========== Question 5 ========== //
 
 function aliens(){
@@ -119,7 +128,6 @@ function aliens(){
   }
 }
 
-aliens();
 // ========== Question 6 ========== //
 function ageQuestion(){
   var tries = 4;
@@ -148,19 +156,16 @@ function ageQuestion(){
 
   }
 }
-ageQuestion();
+
 //========== Question 7 ========== //
+
 function favoriteCity(){
   var tries2 = 6;
   var cityArray = ['london','daytona beach','berlin','vancouver','hay\'s kansas','orlando','montreal'];
-  var cityAnswers = cityArray.toString(); // quicker way, but format issues?
-
-  console.log(cityGuess);
+  var cityAnswers = cityArray.toString();
 
   do {
     var cityGuess = prompt('What\'s my favorite city to visit? ' + cityArray[0] + ', ' + cityArray[1]+', '+cityArray[2]+', '+cityArray[3]+', '+cityArray[4]+', '+cityArray[5]+', or '+cityArray[6]+'?').toLowerCase();
-
-    console.log(cityGuess);
 
     tries2--;
 
@@ -173,8 +178,6 @@ function favoriteCity(){
       alert('NOPE! ' + tries2 + ' Tries left. Hint: ' + cityAnswers);
     }
 
-    console.log(cityGuess);
-
   } while (tries2 > 0);
 
   if (tries2 === 0){
@@ -182,7 +185,6 @@ function favoriteCity(){
 
   }
 }
-favoriteCity ();
 
 // ========== FINAL SCORE ========== //
 

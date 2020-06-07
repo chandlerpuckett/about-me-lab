@@ -11,8 +11,8 @@ header {
 
 img {
   image-rendering: crisp-edges;
-  width: 800px;
-  height: 800px;
+  width: 825px;
+  height: 825px;
   padding: 25px;
   position: relative;
   margin-left: 1px;
@@ -36,9 +36,9 @@ h2 {
   font-size: 80px;
   text-orientation: upright;
   letter-spacing: -30px;
-  margin-left: -50px;
+  margin-left: -70px;
   margin-right: -20px;
-  padding-inline-start: 275px;
+  padding-inline-start: 325px;
   padding-right: 10px;
 
 }
@@ -79,6 +79,10 @@ p ~ ul {
 
 /* ========== Section1 BIO =========== */
 
+.section1 {
+  margin-left: -15px;
+}
+
 #bio {
   padding: 35px;
   margin: 5px;
@@ -89,9 +93,11 @@ p ~ ul {
 .section1 p {
   padding: 10px;
   padding-top: 75px;
+  padding-left: 20px;
   padding-right: 10px;
   padding-bottom: 100px;
   width: 155px;
+  text-align: left;
 
 }
 
@@ -100,7 +106,7 @@ p ~ ul {
 #education {
   padding: 35px;
   margin: 10px;
-  margin-top: 75px;
+  margin-top: 85px;
 }
 
 .section2 {
@@ -151,6 +157,7 @@ p ~ ul {
 }
 
 .section4 {
+  margin-top: 35px;
   margin-right: -10px;
 }
 
@@ -162,7 +169,7 @@ p ~ ul {
 /* ========== Section5 FILMS =========== */
 
 .section5 {
-  margin-top: 350px;
+  margin-top: 385px;
   margin-left: -125px;
 }
 
