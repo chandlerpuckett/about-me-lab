@@ -48,7 +48,7 @@
 
 
 //========== GLOBAL VAR + GREETING ========== //
-var score = 0
+var score = 0;
 var userName = prompt('What\'s your name?');
 
 alert('Howdy ' + userName + '!' + ' Nice to meet you. I\'m Chandler. here\'s a little bit of info about me!');
@@ -70,12 +70,12 @@ homeTown();
 
 function woods(){
   var answer2 = prompt('Have I ever spent more than one month in the woods?') .toLowerCase() .replace('yes','y');
-  if (answer2 === 'y'){ 
+  if (answer2 === 'y'){
     score ++;
     alert('DING DING DING! I spent two months in the woods of north georgia taking part in a wilderness program');
   } else {
     alert('NOPE! I spent two months in the woods of north georgia taking part in a wilderness program');
-    
+
   }
 }
 
@@ -89,7 +89,7 @@ function bilingual(){
     alert('DING DING DING! Just english. I\'ve tried to teach myself French but never stuck with it long enough to learn.');
   } else {
     alert('NOPE. Just english');
-    
+
   }
 }
 bilingual();
@@ -102,7 +102,7 @@ function morning(){
     alert('DING DING DING! hell to the nah. I love to sleep');
   } else {
     alert('hell to the nah. I love to sleep');
-    
+
   }
 }
 morning();
@@ -115,7 +115,7 @@ function aliens(){
     alert(' 👽 ' + 'I WANT TO BELIEVE ' + ' 👽' );
   } else {
     alert(' 👽👽👽👽👽👽👽👽👽👽👽 ');
-    
+
   }
 }
 
@@ -135,7 +135,7 @@ function ageQuestion(){
     } else if (userGuess <= 29) {
       alert('NOPE, higher. ' + tries + ' tries left.');
     } else if (userGuess === 30) {
-      alert('Great job ' + userName + '!');
+      alert('Great job ' + userName + '!' + 'I\'m 30 years old.');
       score ++;
       break;
     }
@@ -143,7 +143,7 @@ function ageQuestion(){
   } while (tries > 0);
 
   if (tries === -1){
-    
+
     alert('No more tries. I\'m 30');
 
   }
@@ -165,7 +165,7 @@ function favoriteCity(){
     tries2--;
 
     if (cityGuess === cityArray[6] || cityGuess === cityArray[3]){
-      alert('Great job! I love Montreal!');
+      alert('Great job! I love Montreal & Vancouver! 🇨🇦🇨🇦🇨🇦');
       score ++;
       break;
 
@@ -178,8 +178,8 @@ function favoriteCity(){
   } while (tries2 > 0);
 
   if (tries2 === 0){
-    alert('No more tries. My favorite city to visit is Montreal!');
-    
+    alert('No more tries. Montreal & Vancouver are two of my favorite cities 🇨🇦🇨🇦🇨🇦');
+
   }
 }
 favoriteCity ();

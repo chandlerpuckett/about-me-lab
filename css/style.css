@@ -11,8 +11,8 @@ header {
 
 img {
   image-rendering: crisp-edges;
-  width: 850px;
-  height: 850px;
+  width: 800px;
+  height: 800px;
   padding: 25px;
   position: relative;
   margin-left: 1px;
@@ -46,10 +46,13 @@ h2 {
 h3 {
   font-family: 'Open Sans', sans-serif;
   background-color: #FBFBFB;
-  font-size: 24;
+  font-size: 22;
   display: inline-flex;
-  padding-right: 65px;
+  padding-top: 0px;
+  padding-right: 45px;
   padding-left: 10px;
+  align-items: center;
+  box-shadow: 2px 2px 2px 2px;
   
 }
 
@@ -60,9 +63,6 @@ p {
   font-weight: 300;
   background-color: rgb(240, 240, 240);
   font-size: 16;
-  padding: 10px;
-  padding-top: 150px;
-  padding-right: 10px;
   text-align: right;
 }
 
@@ -71,11 +71,106 @@ ul {
 }
 
 p ~ ul {
-  font-weight: 800;
-  letter-spacing: 0px;
-  margin-left: 65px;
-  padding-right: 10px;
+  font-weight: 500;;
+  margin-left: -5px;
+  padding-right: 5px;
+
 }
+
+/* ========== Section1 BIO =========== */
+
+#bio {
+  padding: 35px;
+  margin: 5px;
+  margin-top: 30px;
+  margin-left: 45px;
+}
+
+.section1 p {
+  padding: 10px;
+  padding-top: 75px;
+  padding-right: 10px;
+  padding-bottom: 100px;
+  width: 155px;
+
+}
+
+/* ========== Section2 EDU =========== */
+
+#education {
+  padding: 35px;
+  margin: 10px;
+  margin-top: 75px;
+}
+
+.section2 {
+  margin-bottom: 10px;
+}
+
+.section2 li  {
+  margin-bottom: 25px;
+  margin-right: 10px;
+}
+
+.section2 p {
+  width: 100px;
+  height: 100px;
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+
+/* ========== Section3 EXP =========== */
+
+#experience {
+  padding: 35px;
+  margin: 10px;
+  margin-top: 150px;
+}
+
+.section3 li {
+  margin-bottom: 5px;
+  font-weight: 800;
+  text-align: right;
+}
+
+.section3 p {
+  padding: 10px;  
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+/* ========== Section4 FUT =========== */
+
+#future {
+  padding: 35px;
+  margin: 10px;
+}
+
+.section4 {
+  margin-right: -10px;
+}
+
+.section4 p {
+  padding: 15px;
+  padding-right: 15px;;
+}
+
+/* ========== Section5 FILMS =========== */
+
+.section5 {
+  margin-top: 350px;
+  margin-left: -125px;
+}
+
+.section5 li {
+  margin-bottom: 7.5px;
+}
+
+/* =============================== */
 
 footer ul {
   display: flex;
@@ -89,35 +184,3 @@ footer ul {
   height: 50px;
   text-align: inherit;
 }
-
-.section4 {
-  margin-right: -10px;
-}
-/* =============================== */
-/* heading blocks */
-
-#bio {
-  padding: 35px;
-  margin: 10px;
-  margin-top: 30px;
-}
-
-#education {
-  padding: 35px;
-  margin: 10px;
-  margin-top: 75px;
-}
-
-#experience {
-  padding: 35px;
-  margin: 10px;
-  margin-top: 150px;
-}
-
-#future {
-  padding: 35px;
-  margin: 10px;
-}
-
-/* =============================== */
-
